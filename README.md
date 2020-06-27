@@ -1,5 +1,5 @@
-# test
-#implemented a silly car spining a specific retangle:
 
-# enterpoint 
+#implemented a silly car spining within a specific retangle:
+
+#enterpoint 
 gradle org.exam.BoostrapApp
