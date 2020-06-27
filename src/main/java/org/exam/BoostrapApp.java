@@ -9,13 +9,13 @@ import java.util.concurrent.TimeUnit;
 import static org.exam.Constants.Orientation.E;
 
 @Slf4j
-public class BroostStartApp {
+public class BoostrapApp {
 
     private ParkMap part;
     private DriverlessCar car;
     private Random step = new Random();
 
-    BroostStartApp(ParkMap part, DriverlessCar car) {
+    BoostrapApp(ParkMap part, DriverlessCar car) {
         this.part = part;
         this.car = car;
     }
@@ -63,7 +63,7 @@ public class BroostStartApp {
         ParkMap park = new ParkMap(10, 10);
         DriverlessCar car = new DriverlessCar("Ferrira", 4, 5, 0);
 
-        BroostStartApp broostStart = new BroostStartApp(park, car);
+        BoostrapApp broostStart = new BoostrapApp(park, car);
         Thread  thread =new Thread(() -> {
             try {
                 broostStart.lockOn();
